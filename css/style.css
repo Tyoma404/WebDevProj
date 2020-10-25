@@ -1,0 +1,100 @@
+@import 'font.css';
+
+body{
+    font-family: 'Open Sans';
+}
+
+ul, li{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar{
+    background-color: #fff;
+    color: #212121;
+    padding: 20px 0;
+}
+
+.menu__item{
+    margin-left: 37px;
+}
+
+.menu__item a{
+    font-family: 'Open Sans Smibold';
+    font-size: 20px;
+    color: #212121;
+}
+
+.menu__item a:hover{
+    text-decoration: none;
+    color: #aa5151;
+}
+
+.header > div{
+    padding: 180px 0;
+    text-align: center;
+    color: white;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-position: 0 100%;
+}
+
+.header__title{
+    font-size: 55px;
+}
+
+.header__text{
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.button{
+    padding: 10px 25px;
+    margin: 0 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.button_empty{
+    background: transparent;
+    border: 2px solid white;
+}
+
+.button_full{
+    background: #00897b;
+    border: 2px solid #00897b;
+}
+
+.button_empty:hover,
+.button_full:hover {
+    border: 2px dotted white;
+    background: #01524a;
+}
+
+.about{
+    padding-top: 120px;
+    padding-bottom: 125px;
+    color: black;
+    background: white;
+    text-align: center;
+}
+
+.about__tittle{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.about__text{
+    color: #2d2c2c;
+    font-size: 15px;
+    margin-bottom: 110px;
+}
+
+.about_h3{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans Smibold';
+}
