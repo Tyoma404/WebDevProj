@@ -70,6 +70,7 @@ ul, li{
 .button_full:hover {
     border: 2px dotted white;
     background: #01524a;
+    cursor: pointer;
 }
 
 .about{
@@ -97,4 +98,69 @@ ul, li{
     margin-top: 30px;
     margin-bottom: 20px;
     font-family: 'Open Sans Smibold';
+}
+
+.services{
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: black;
+    background: #e4fdf9;
+    text-align: center;
+}
+
+.our_card{
+    background: white;
+    padding: 50px 35px 40px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.card__text{
+    color: #2d2c2c;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.our_card:hover{
+    background: #00897b;
+    color: white;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+    transition: 0.3s;
+}
+
+.our_card:hover .icon{
+    color: white;
+    transition: 0.3s;
+}
+
+.our_card:hover .card__text{
+    color: white;
+    transition: 0.3s;
+}
+
+.our_card:hover .button_services{
+    color: white;
+    transition: 0.3s;
+    border: 1px solid white;
+}
+
+.icon{
+    font-size: 60px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.button_services{
+    color: #000;
+    text-transform: uppercase;
+    border: 1px solid gray;
+    background: transparent;
+    padding: 14px 12px;
+    font-family: 'Open Sans Smibold';
+    transition: 0.3s;
+}
+
+.button_services:hover{
+    cursor: pointer;
+    border: 1px dotted white;
 }
