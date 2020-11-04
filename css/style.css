@@ -31,7 +31,7 @@ ul, li{
     color: #aa5151;
 }
 
-.header > div{
+.header{
     padding: 180px 0;
     text-align: center;
     color: white;
@@ -57,8 +57,10 @@ ul, li{
 }
 
 .button_empty{
+    text-transform: uppercase;
+    color: black;
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 
 .button_full{
@@ -66,11 +68,18 @@ ul, li{
     border: 2px solid #00897b;
 }
 
-.button_empty:hover,
 .button_full:hover {
-    border: 2px dotted white;
-    background: #01524a;
+    border: 2px solid white;
+    background: transparent;
     cursor: pointer;
+}
+
+.button_empty:hover,
+.focused{
+    background: #00897b;
+    border: 2px solid #00897b;
+    cursor: pointer;  
+    color: white;
 }
 
 .about{
@@ -163,4 +172,87 @@ ul, li{
 .button_services:hover{
     cursor: pointer;
     border: 1px dotted white;
+}
+
+.portfolio{
+    padding-top: 120px;
+    padding-bottom: 125px;
+    color: black;
+    background: white;
+    text-align: center;
+}
+
+.portfolio img{
+    margin-bottom: 30px;
+}
+
+.filter{
+    padding: 120px 0;
+}
+
+.text{
+    display: none;
+    position: absolute;
+    color: white;
+    transition: 0.3s;
+}
+
+div[data-filter]:hover .text{
+    display: block;
+    width: 100%;
+    top: 40%;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+}
+
+div[data-filter]:hover img{
+    filter: brightness(60%);
+    transition: 0.3s;
+} 
+
+
+
+.plans{
+    padding-top: 120px;
+    padding-bottom: 125px;
+    color: black;
+    background: #f0f1f1;
+    text-align: center;
+}
+
+
+
+.team{
+    padding-top: 120px;
+    padding-bottom: 125px;
+    color: black;
+    background: white;
+    text-align: center;
+}
+
+
+
+.blog{
+    padding-top: 120px;
+    padding-bottom: 125px;
+    color: black;
+    background: #e4fdf9;
+    text-align: center;
+}
+
+
+
+.contact{
+    padding-top: 120px;
+    padding-bottom: 125px;
+    color: white;
+    background: url(../img/footer.png);
+    text-align: center;
+}
+
+
+
+.footer{
+    margin: 20px 0;
 }
